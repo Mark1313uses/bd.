@@ -93,19 +93,27 @@ SELECT * FROM users ORDER BY id LIMIT 10 OFFSET 10
 •   WHERE city IN ('Moscow', 'London', 'Paris')
 # Практическая 1
 1) select * from order
+
 ![image](https://github.com/user-attachments/assets/3a14d5fe-20cb-49a4-962e-f40a3b91da28)
-2) Выберите из таблицы orders все заказы кроме новых. У новых заказов status равен "new". Использовать in
+
+3) Выберите из таблицы orders все заказы кроме новых. У новых заказов status равен "new". Использовать in
  
 select * from orders where status in('cancelled', 'in_progress', 'delivery')
+
 ![image](https://github.com/user-attachments/assets/c06a1ba5-1b48-41b9-a954-bf7908d89a51)
+
 3) Выберите из таблицы orders все новые и отмененные заказы. У отмененных заказов status равен "cancelled". У новых заказов status равен "new".
  
 select * from orders where status in('cancelled', 'new')
+
 ![image](https://github.com/user-attachments/assets/fd44b27d-59a2-43b2-b3ac-30d2b23de1d4)
+
 4) Выберите из таблицы orders все заказы содержащие более 3 товаров (products_count). Вывести нужно только номер (id) и сумму (sum) заказа.
  
 select id,sum from orders where products_count > 3
+
 ![image](https://github.com/user-attachments/assets/2da587ae-70d9-43e8-b4ef-776ca0cbba7a)
+
  ЛАБА №2
                                     
 1) Выберите из таблицы orders 3 самых дешевых заказа за всё время.
