@@ -112,7 +112,7 @@ select id,sum from orders where products_count > 3
 Данные нужно отсортировать в порядке убывания цены.
 Отмененные заказы не учитывайте
 
-![image](https://github.com/user-attachments/assets/a013a79a-1cd5-4b17-b3ac-1baaeaf58db9)
+![image](https://github.com/user-attachments/assets/03a46d6a-77bc-4e2d-b0eb-f4a428b5224d)
 
 SELECT * FROM orders WHERE STATUS !='canseled' order by sum ASC LIMIT 3
 
@@ -120,25 +120,25 @@ SELECT * FROM orders WHERE STATUS !='canseled' order by sum ASC LIMIT 3
 Данные нужно отсортировать в порядке убывания цены.
 Отмененные заказы не учитывайте.
 
-![image](https://github.com/user-attachments/assets/e3eae9d3-7df4-45df-868b-d63c97d9ab93)
+![image](https://github.com/user-attachments/assets/c58e1718-d23a-436a-aa39-b93947e48926)
 
 SELECT * FROM orders WHERE STATUS !='canseled' order by SUM desc LIMIT 2
 
 3) Добавьте в таблицу orders данные о новом заказе стоимостью 8000 рублей. В заказе 4 товара (products).
 
-![image](https://github.com/user-attachments/assets/820709d5-6471-4737-b7a4-726b2341f6f1)
+![image](https://github.com/user-attachments/assets/e142d76c-ab67-4f96-966f-d147ca80431e)
 
 INSERT INTO orders (id, products, SUM) VALUES (6,4,8000)
 
 4) Добавьте в таблицу products новый товар — «VR-очки», стоимостью 70000 рублей в количестве (count) 2 штук.
 
-![image](https://github.com/user-attachments/assets/b379f091-6866-4797-8454-9ca9862cc8e5)
+![image](https://github.com/user-attachments/assets/b3d240c0-c77f-44ea-808f-cbe2f0c2c6fd)
 
 INSERT INTO products (id,NAME,count,price) VALUES (7,'VR-очки',2,70000)
 
 5) В таблицу products внесли данные с ошибкой, вместо "PS5" в наименовании написали IMAC. Исправьте ошибку.
 
-![image](https://github.com/user-attachments/assets/3d415960-8ad8-4914-a38b-0be22cd122c3)
+![image](https://github.com/user-attachments/assets/a3bce01f-1911-4beb-a806-40b5058a4cd1)
 
 UPDATE products SET NAME='PS5' WHERE NAME='IMAC'
 
@@ -148,7 +148,7 @@ UPDATE products SET NAME='PS5' WHERE NAME='IMAC'
 
 Добавьте в таблицу трех пользователей: Дмитрия Иванова, Анатолия Белого и Дениса Давыдова.
 
-![image](https://github.com/user-attachments/assets/8c40f261-e61a-438a-a779-ad3c5e21e3ea)
+![image](https://github.com/user-attachments/assets/9e257517-a1d3-462d-8be6-b9e0fb814583)
 
 CREATE TABLE USERS (
     id INT,
